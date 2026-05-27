@@ -53,11 +53,23 @@ On Mondays only: prepend a "Carried Over from Last Week" section listing any act
 
 ---
 
-## 6. Proposed Email Responses
+## 6. Proposed Email Drafts
 
-- Select 2–3 emails that need a reply (prioritize: unread + important, time-sensitive scheduling, warm relationships)
-- Draft each response: concise, professional, matching Kurt's tone (direct, warm, no filler)
-- **Do not send.** Use `Gmail.create_draft` with `replyToMessageId` set to the last message in the thread, so each draft lands pre-threaded in Gmail Drafts ready to review and send
+- **Do not draft replies to unread emails.** Reading and responding to those is Kurt's call.
+- Instead, identify 2–3 situations where a **net-new email** would move something forward — e.g., intro emails Kurt needs to make, outreach to someone mentioned in a meeting, a follow-up to a warm contact, or a "looping in X" note based on meeting context.
+- Draft each email: concise, professional, matching Kurt's tone (direct, warm, no filler)
+- Always include Kurt's signature in the email body:
+
+```
+--
+Kurt Chessman
+VP, Strategic Finance & Corporate Development
+Primary | Twitter | LinkedIn | Newsletter
+We always want to meet top founders
+303.842.2029
+```
+
+- **Do not send.** Use `Gmail.create_draft` so each draft lands in Gmail Drafts ready to review and send. For replies, set `replyToMessageId`. For net-new emails, omit it.
 
 ---
 
