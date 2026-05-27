@@ -71,6 +71,15 @@ We always want to meet top founders
 ```
 
 - **Do not send.** Use `Gmail.create_draft` so each draft lands in Gmail Drafts ready to review and send. For replies, set `replyToMessageId`. For net-new emails, omit it.
+- **Do not display drafts in chat.** Silently push each draft to Gmail, then note a single line at the end of the brief: "N draft(s) pushed to Gmail Drafts."
+
+---
+
+## 7. Slack Notification
+
+After the brief is fully compiled and any Gmail drafts have been pushed, send a Slack DM to Kurt (user ID: `U08G4GWKN22`) with a short message, e.g.:
+
+> "Your daily briefing is ready. N action items, N draft(s) in Gmail Drafts."
 
 ---
 
@@ -82,14 +91,8 @@ We always want to meet top founders
 ### ACTION ITEMS
 [grouped by urgency as above]
 
-### PROPOSED EMAIL RESPONSES
-Draft 1 — [Subject / recipient context]
-> To / CC / Subject
-> Body
-
-Draft 2 — ...
-Draft 3 — ...
-
 ---
 Summary: [1-2 sentences: what's most pressing today]
+
+N draft(s) pushed to Gmail Drafts.
 ```
