@@ -20,7 +20,7 @@ Run each morning. Pull from Granola, Gmail, and Slack. Present action items firs
   - `UNREAD` + `IMPORTANT` labeled threads
   - Threads where Kurt sent the last message and a reply has come in
   - Scheduling requests or time-sensitive offers (e.g., call availability windows)
-- Ignore: automated notifications (GitHub, Zoom join alerts, OOO autoreplies, quarantine alerts)
+- Ignore: automated notifications (GitHub, Zoom join alerts, OOO autoreplies, quarantine alerts), vendor outreach, and any "are you interested in this product/service" solicitations — do not surface these in the brief or draft responses to them
 
 ---
 
