@@ -56,7 +56,8 @@ On Mondays only: prepend a "Carried Over from Last Week" section listing any act
 ## 6. Proposed Email Drafts
 
 - **Do not draft replies to unread emails.** Reading and responding to those is Kurt's call.
-- Instead, identify 2–3 situations where a **net-new email** would move something forward — e.g., intro emails Kurt needs to make, outreach to someone mentioned in a meeting, a follow-up to a warm contact, or a "looping in X" note based on meeting context.
+- Instead, identify 2–3 situations where a **net-new email** would move something forward — e.g., intro emails Kurt needs to make, outreach to someone mentioned in a meeting, or a follow-up to a warm external contact.
+- **External recipients only.** Primary is Slack-first — never propose emailing a @primary.vc colleague. Internal to-dos and follow-ups stay in Slack.
 - Draft each email: concise, professional, matching Kurt's tone (direct, warm, no filler)
 - Always include Kurt's signature in the email body:
 
