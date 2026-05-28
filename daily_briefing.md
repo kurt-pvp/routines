@@ -15,13 +15,23 @@ Run each morning. Pull from Granola, Gmail, and Slack. Present action items firs
 
 ## 2. Gmail — Recent Emails
 
-- Query: `newer_than:1d in:inbox`
-- Page size: 20
-- Focus on:
-  - `UNREAD` + `IMPORTANT` labeled threads
-  - Threads where Kurt sent the last message and a reply has come in
-  - Scheduling requests or time-sensitive offers (e.g., call availability windows)
-- Ignore: automated notifications (GitHub, Zoom join alerts, OOO autoreplies, quarantine alerts), vendor outreach, and any "are you interested in this product/service" solicitations — do not surface these in the brief or draft responses to them
+Kurt uses unread as a mini to-do list in his inbox. Do not focus on unread threads — he already sees those. Instead, surface read threads that have gone unactioned.
+
+Run two queries:
+
+1. `is:read in:inbox newer_than:7d` — recent read inbox threads. Look for:
+   - Threads where the last message is from someone other than Kurt, meaning he read it but never replied
+   - Threads where Kurt sent the last message but a reply came in and he has not followed up
+   - Scheduling threads where a time window was offered but no confirmation was sent
+   - Intro threads that were acknowledged but never moved forward
+
+2. `from:kurt@primary.vc in:sent newer_than:14d` — Kurt's recent outbound. Look for:
+   - Emails Kurt sent that have received no reply, where a reply was reasonably expected
+   - Surface as "no response yet" items if the thread has been quiet for 5+ days
+
+Page size: 20 for each query.
+
+Ignore: automated notifications (GitHub, Zoom join alerts, OOO autoreplies, quarantine alerts), vendor outreach, and any "are you interested in this product/service" solicitations.
 
 ---
 
@@ -67,8 +77,7 @@ On Mondays only: prepend a "Carried Over from Last Week" section listing any act
 
 ## 7. Proposed Email Drafts
 
-- **Do not draft replies to unread emails.** Reading and responding to those is Kurt's call.
-- Instead, identify 2–3 situations where a **net-new email** would move something forward — e.g., intro emails Kurt needs to make, outreach to someone mentioned in a meeting, or a follow-up to a warm external contact.
+- Identify 2–3 situations where a **net-new email** would move something forward — e.g., intro emails Kurt needs to make, outreach to someone mentioned in a meeting, a follow-up to a warm external contact, or a nudge on a thread that has gone quiet.
 - **External recipients only.** Primary is Slack-first — never propose emailing a @primary.vc colleague. Internal to-dos and follow-ups stay in Slack.
 - Draft each email: concise, professional, matching Kurt's tone (direct, warm, no filler)
 - Always include Kurt's signature in the email body:
