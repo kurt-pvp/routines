@@ -9,6 +9,7 @@ Run each morning. Pull from Granola, Gmail, and Slack. Present action items firs
 - Query `list_meetings` with `time_range: custom`, `custom_start` = yesterday, `custom_end` = today
 - For each meeting returned, call `get_meetings` with all IDs in a single batch call
 - Extract: decisions made, open questions, explicit next steps, and any items assigned to Kurt
+- Do not output a meetings list. Kurt uses his calendar for that. Only surface what feeds into action items.
 
 ---
 
@@ -41,7 +42,10 @@ Compile a unified list across all three sources. Group by urgency:
 - **Active deals / portfolio** — follow-ups on live transactions or portco situations
 - **Relationship / scheduling** — intros to acknowledge, meetings to confirm
 - **Admin / deadlines** — homework, RSVPs, registrations
-- **Strategic** — longer-horizon items from coaching, partner direction, self-initiated work
+
+Do not include strategic/Quadrant 2 items here. Those live in `projects.md`.
+
+After the action items, add a single **Strategic Queue** line: pick one item from the Active section of `projects.md` and surface it as a brief nudge with its next action. Rotate through items across sessions. Do not list all projects.
 
 If no action items exist across all sources, note that briefly.
 
@@ -53,7 +57,15 @@ On Mondays only: prepend a "Carried Over from Last Week" section listing any act
 
 ---
 
-## 6. Proposed Email Drafts
+## 6. Formatting Rules
+
+- No em-dashes. Use a comma, colon, or period instead.
+- No meetings list in the output. See note in section 1.
+- Keep bullets tight. One line per item where possible.
+
+---
+
+## 7. Proposed Email Drafts
 
 - **Do not draft replies to unread emails.** Reading and responding to those is Kurt's call.
 - Instead, identify 2–3 situations where a **net-new email** would move something forward — e.g., intro emails Kurt needs to make, outreach to someone mentioned in a meeting, or a follow-up to a warm external contact.
@@ -82,7 +94,9 @@ We always want to meet top founders
 ### ACTION ITEMS
 [grouped by urgency as above]
 
-### PROPOSED EMAIL RESPONSES
+**Strategic Queue:** [One item from projects.md with its next action]
+
+### PROPOSED EMAILS
 Draft 1 — [Subject / recipient context]
 > To / CC / Subject
 > Body
@@ -91,5 +105,5 @@ Draft 2 — ...
 Draft 3 — ...
 
 ---
-Summary: [1-2 sentences: what's most pressing today]
+Summary: [1-2 sentences, what's most pressing today]
 ```
