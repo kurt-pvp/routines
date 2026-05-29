@@ -65,7 +65,13 @@ On Mondays only: prepend a "Carried Over from Last Week" section listing any act
 
 ---
 
-## 7. Proposed Email Drafts
+## 7. Slack DM
+
+After compiling the brief, send the full output as a DM to Kurt on Slack (user ID: U08G4GWKN22). Use the same content and structure as the output format below. Proposed email drafts section can be condensed to a single line noting how many drafts were saved to Gmail.
+
+---
+
+## 8. Proposed Email Drafts
 
 - **Do not draft replies to unread emails.** Reading and responding to those is Kurt's call.
 - Instead, identify 2–3 situations where a **net-new email** would move something forward — e.g., intro emails Kurt needs to make, outreach to someone mentioned in a meeting, or a follow-up to a warm external contact.
