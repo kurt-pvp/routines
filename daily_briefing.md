@@ -4,6 +4,16 @@ Run each morning. Pull from Granola, Gmail, and Slack. Present action items firs
 
 ---
 
+## 0. Before You Start
+
+Do two things before pulling from live sources:
+
+**Read the briefing log:** Read `briefing_log.md` in this repo. It contains open items carried forward from prior sessions, context produced in other Claude chats, and notes from the previous briefing. Use it to seed the action items list and avoid losing thread on ongoing work.
+
+**Check Google Drive for recent documents:** Search Drive for files created or modified in the last 48 hours owned by kurt@primary.vc (`owner = 'me' and modifiedTime > '[yesterday ISO timestamp]'`). Skim titles and snippets for anything that looks like a working memo, strategy doc, or thinking document produced in a Claude session. If found, read it and fold the content into the relevant action items or projects.md entries.
+
+---
+
 ## 1. Granola — Recent Meetings
 
 - Query `list_meetings` with `time_range: custom`, `custom_start` = yesterday, `custom_end` = today
@@ -89,6 +99,15 @@ We always want to meet top founders
 ```
 
 - **Do not send.** Use `Gmail.create_draft` so each draft lands in Gmail Drafts ready to review and send. For replies, set `replyToMessageId`. For net-new emails, omit it.
+
+---
+
+## 9. Update the Briefing Log
+
+At the end of each session, append a new dated entry to `briefing_log.md` with:
+- Any important context or documents produced today (with links)
+- Open items that should carry forward to tomorrow
+- Any changes made to the routines files
 
 ---
 

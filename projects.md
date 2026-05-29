@@ -8,10 +8,11 @@ Each daily briefing reads this file and surfaces one item from Active as a nudge
 
 ## Active
 
-### Impact 3.0: Cohesive Vision and Story
-**Goal:** Develop a clear, unified narrative across Primary's 3 impact pillars in response to a direct ask from Brad and Cassie. The team (Kurt, Rebecca, Jason, Jamie) needs to align on what each pillar stands for and how they fit together as a firm-wide story.
-**Next action:** Complete the scheduling discussion with Rebecca/Jason/Jamie and run the working session (Impact Work blocked for Jun 2)
-**Added:** 2026-05-29 (Brad/Cassie ask, surfaced in Rebecca DM)
+### Impact 3.0: Finance/Ops Pillar
+**Goal:** Define and operationalize Primary's Finance/Ops impact offering. The core thesis: the most durable leave-behind for a portco is a clean, well-architected data environment ("Database as a Service") — standardized chart of accounts, canonical metric definitions, a linked operating model, and a data warehouse structured for the archetype. Automation and insight both depend on this layer being right. Key headwinds documented: finance varies by archetype (need archetype-specific kits: SaaS, usage/infra, marketplace, commerce, long-R&D), founders resist reporting not modeling (frame everything as decision support), access/trust is the hardest constraint.
+**Working doc:** [Finance Impact Memo](https://docs.google.com/document/d/1XJjmZmD5WRKJDvz_iWIpFT9s5GhXV4mWZrFyp83hiIk/edit)
+**Next action:** Share the memo with Rebecca/Jason/Jamie as pre-read ahead of the Impact Work session (Jun 2). Align on whether Finance is one of the 3 pillars or cuts across all of them, and pressure-test the "Database as a Service" framing with the team.
+**Added:** 2026-05-29 (Finance Impact Memo produced in Claude session; Brad/Cassie ask via Rebecca DM)
 
 ### Corp Dev Educational Series (Portfolio Companies)
 **Goal:** Help founders understand M&A, corp dev relationships, and deal structures before they need to navigate one. White space for Primary to add value beyond capital.
