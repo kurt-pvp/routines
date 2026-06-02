@@ -34,9 +34,32 @@ Run each morning. Pull from Granola, Gmail, and Slack. Present action items firs
 
 ---
 
-## 4. Action Items
+## 4. Google Calendar — Verify What's Already Scheduled
 
-Compile a unified list across all three sources. Group by urgency:
+Before compiling action items, query Google Calendar for events created or modified in the last 24 hours:
+
+- Call `list_events` on Kurt's primary calendar with `timeMin` = yesterday, `timeMax` = tomorrow+7 days
+- Use this to cross-check scheduling action items: if a meeting is already on the calendar, do not surface "schedule a call with X" as an action item
+- Also note any new meetings appearing tomorrow or later this week that were not on the calendar yesterday — these may reflect items already actioned
+
+---
+
+## 5. Completion Check — Do Not Surface Already-Done Items
+
+Before finalizing the action item list, run a brief verification pass:
+
+- For each candidate action item, check whether there is evidence it has already been handled:
+  - **Scheduling asks:** Is there a calendar event that satisfies it? (Section 4)
+  - **Email follow-ups:** Search Gmail `in:sent newer_than:2d` for a sent message to that person or on that topic
+  - **Slack asks:** Scan the same Slack threads for a reply from Kurt confirming completion (e.g., "sent," "done," "on it," "just scheduled")
+- If an item has clear evidence of completion, drop it entirely. Do not include it with a "done" note — only live action items belong in the brief.
+- When uncertain, include the item but flag it: "Verify: may already be handled."
+
+---
+
+## 6. Action Items
+
+Compile a unified list across all sources. Group by urgency:
 
 - **Time-sensitive today** — scheduling deadlines, expiring offers, same-day asks
 - **Active deals / portfolio** — follow-ups on live transactions or portco situations
@@ -51,13 +74,13 @@ If no action items exist across all sources, note that briefly.
 
 ---
 
-## 5. Monday Morning Addition
+## 7. Monday Morning Addition
 
 On Mondays only: prepend a "Carried Over from Last Week" section listing any action items from the previous week's briefings that remain unresolved. Source from memory or prior Granola/Gmail context.
 
 ---
 
-## 6. Formatting Rules
+## 8. Formatting Rules
 
 - No em-dashes. Use a comma, colon, or period instead.
 - No meetings list in the output. See note in section 1.
@@ -65,7 +88,7 @@ On Mondays only: prepend a "Carried Over from Last Week" section listing any act
 
 ---
 
-## 7. Proposed Email Drafts
+## 9. Proposed Email Drafts
 
 - **Do not draft replies to unread emails.** Reading and responding to those is Kurt's call.
 - Instead, identify 2–3 situations where a **net-new email** would move something forward — e.g., intro emails Kurt needs to make, outreach to someone mentioned in a meeting, or a follow-up to a warm external contact.
@@ -86,7 +109,7 @@ We always want to meet top founders
 
 ---
 
-## 8. Slack Delivery
+## 10. Slack Delivery
 
 After compiling the brief and pushing Gmail drafts, post the complete brief to Kurt's Slack DM using `slack_send_message` with `channel_id: U08G4GWKN22`. Tag him at the top with `<@U08G4GWKN22>` so it triggers a notification. Use the same output format as below.
 
