@@ -1,6 +1,6 @@
 # Daily Briefing Routine
 
-Run each morning. Pull from Granola, Gmail, and Slack. Present action items first, then push proposed email responses directly to Gmail Drafts.
+Run each morning. Pull from Granola, Gmail, and Slack. Present action items first, then push proposed email responses directly to Gmail Drafts. Deliver the final brief to Kurt via Slack DM.
 
 ---
 
@@ -83,6 +83,12 @@ We always want to meet top founders
 ```
 
 - **Do not send.** Use `Gmail.create_draft` so each draft lands in Gmail Drafts ready to review and send. For replies, set `replyToMessageId`. For net-new emails, omit it.
+
+---
+
+## 8. Slack Delivery
+
+After compiling the brief and pushing Gmail drafts, post the complete brief to Kurt's Slack DM using `slack_send_message` with `channel_id: U08G4GWKN22`. Tag him at the top with `<@U08G4GWKN22>` so it triggers a notification. Use the same output format as below.
 
 ---
 
