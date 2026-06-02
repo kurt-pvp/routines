@@ -46,14 +46,15 @@ Before compiling action items, query Google Calendar for events created or modif
 
 ## 5. Completion Check — Do Not Surface Already-Done Items
 
-Before finalizing the action item list, run a brief verification pass:
+Before finalizing the action item list, run a verification pass. This step is mandatory — do not skip it.
 
-- For each candidate action item, check whether there is evidence it has already been handled:
-  - **Scheduling asks:** Is there a calendar event that satisfies it? (Section 4)
-  - **Email follow-ups:** Search Gmail `in:sent newer_than:2d` for a sent message to that person or on that topic
-  - **Slack asks:** Scan the same Slack threads for a reply from Kurt confirming completion (e.g., "sent," "done," "on it," "just scheduled")
-- If an item has clear evidence of completion, drop it entirely. Do not include it with a "done" note — only live action items belong in the brief.
-- When uncertain, include the item but flag it: "Verify: may already be handled."
+**Sent mail check:** Run a single broad Gmail query: `in:sent newer_than:7d`. Scan the results for any emails to people or on topics that match candidate action items. A sent email to that person on that subject is sufficient to drop the item.
+
+**Calendar check:** If the action item is a scheduling ask (set up a call, send a calendar invite), verify no event already exists with that person in Section 4 results before surfacing it.
+
+**Slack confirmation check:** In the same Slack threads where the action item originated, look for a reply from Kurt indicating completion: "sent," "done," "scheduled," "on it," "just shared," etc.
+
+**Rule:** If any of the three checks show clear evidence of completion, drop the item entirely — do not include it, even with a "done" note. Only live, unresolved items belong in the brief. When genuinely uncertain, include the item with a "Verify:" flag.
 
 ---
 
