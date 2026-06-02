@@ -48,7 +48,7 @@ Before compiling action items, query Google Calendar for events created or modif
 
 Before finalizing the action item list, run a verification pass. This step is mandatory — do not skip it.
 
-**Sent mail check:** Run a single broad Gmail query: `in:sent newer_than:7d`. Scan the results for any emails to people or on topics that match candidate action items. A sent email to that person on that subject is sufficient to drop the item.
+**Sent mail check:** Run a single broad Gmail query: `in:sent newer_than:2d`. Scan the results for any emails to people or on topics that match candidate action items. Search by name or keyword — do not rely solely on exact email addresses, as those may not match. A sent email to that person on that subject is sufficient to drop the item.
 
 **Calendar check:** If the action item is a scheduling ask (set up a call, send a calendar invite), verify no event already exists with that person in Section 4 results before surfacing it.
 
