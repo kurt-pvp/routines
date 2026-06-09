@@ -27,9 +27,10 @@ Run each morning. Pull from Granola, Gmail, and Slack. Present action items firs
 
 ## 3. Slack — Active Channels and DMs
 
-- Search DMs and group DMs first: `channel_types: im,mpim` — query `after:YYYY-MM-DD`
-- If date-filtered search returns no results, fall back to keyword search: `kurt primary` across all channel types, sorted by timestamp desc
-- For any channel/DM with activity in the last 24 hours, call `slack_read_channel` with `oldest` set to yesterday's Unix timestamp to get full recent context
+- Primary search: `to:me after:YYYY-MM-DD` across all channel types — this reliably surfaces recent DMs and group DMs directed at Kurt
+- Secondary search: `after:YYYY-MM-DD` across all channel types to catch active channels where Kurt is a participant
+- Note: date-filtered DM-only searches (`channel_types: im,mpim`) return no results — do not use that approach
+- For any DM or group DM with activity in the last 24 hours, call `slack_read_channel` with `oldest` set to yesterday's Unix timestamp to get full context
 - Extract: action items directed at Kurt, questions awaiting his response, decisions made in thread
 
 ---
@@ -70,7 +71,7 @@ On Mondays only: prepend a "Carried Over from Last Week" section listing any act
 - **Do not draft replies to unread emails.** Reading and responding to those is Kurt's call.
 - Instead, identify 2–3 situations where a **net-new email** would move something forward — e.g., intro emails Kurt needs to make, outreach to someone mentioned in a meeting, or a follow-up to a warm external contact.
 - **External recipients only.** Primary is Slack-first — never propose emailing a @primary.vc colleague. Internal to-dos and follow-ups stay in Slack.
-- Draft each email: concise, professional, matching Kurt's tone (direct, warm, no filler)
+- Draft each email inline in the brief output: concise, professional, matching Kurt's tone (direct, warm, no filler)
 - Always include Kurt's signature in the email body:
 
 ```
@@ -82,7 +83,13 @@ We always want to meet top founders
 303.842.2029
 ```
 
-- **Do not send.** Use `Gmail.create_draft` so each draft lands in Gmail Drafts ready to review and send. For replies, set `replyToMessageId`. For net-new emails, omit it.
+- **Do not call `Gmail.create_draft`.** Show the proposed email text in the brief only. Kurt will send from Gmail directly if he wants to use it.
+
+---
+
+## 8. Slack Delivery
+
+After compiling the brief, post it to Kurt's Slack DM (user ID: `U08G4GWKN22`, channel ID: `D08G4GX78J2`) using `slack_send_message`. Tag Kurt with `<@U08G4GWKN22>` at the top. This is required — the brief is not delivered until it hits Slack.
 
 ---
 
