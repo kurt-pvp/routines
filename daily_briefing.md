@@ -67,7 +67,7 @@ On Mondays only: prepend a "Carried Over from Last Week" section listing any act
 
 ## 7. Delivery
 
-Post the brief as a message to Kurt's Slack self-DM: channel ID `D08G4GX78J2`. Use `slack_send_message`.
+Post the brief as a message to the `#kc_daily_brief` channel: channel ID `C0BASDNBTK5`. Use `slack_send_message`. Always tag Kurt with `<@U08G4GWKN22>` at the top so he gets the notification.
 
 Do not create Gmail drafts.
 
