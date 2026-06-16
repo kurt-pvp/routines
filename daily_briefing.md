@@ -1,6 +1,6 @@
 # Daily Briefing Routine
 
-Run each morning. Pull from Granola, Gmail, and Slack. Present action items first, then push proposed email responses directly to Gmail Drafts.
+Run each morning. Pull from Granola, Gmail, and Slack. Deliver the brief as a Slack message to Kurt's self-DM (channel ID: D08G4GX78J2).
 
 ---
 
@@ -65,45 +65,37 @@ On Mondays only: prepend a "Carried Over from Last Week" section listing any act
 
 ---
 
-## 7. Proposed Email Drafts
+## 7. Delivery
 
-- **Do not draft replies to unread emails.** Reading and responding to those is Kurt's call.
-- Instead, identify 2–3 situations where a **net-new email** would move something forward — e.g., intro emails Kurt needs to make, outreach to someone mentioned in a meeting, or a follow-up to a warm external contact.
-- **External recipients only.** Primary is Slack-first — never propose emailing a @primary.vc colleague. Internal to-dos and follow-ups stay in Slack.
-- Draft each email: concise, professional, matching Kurt's tone (direct, warm, no filler)
-- Always include Kurt's signature in the email body:
+Post the brief as a message to Kurt's Slack self-DM: channel ID `D08G4GX78J2`. Use `slack_send_message`.
 
-```
---
-Kurt Chessman
-VP, Strategic Finance & Corporate Development
-Primary | Twitter | LinkedIn | Newsletter
-We always want to meet top founders
-303.842.2029
-```
-
-- **Do not send.** Use `Gmail.create_draft` so each draft lands in Gmail Drafts ready to review and send. For replies, set `replyToMessageId`. For net-new emails, omit it.
+Do not create Gmail drafts.
 
 ---
 
 ## Output Format
 
+Post to Slack. Use this structure:
+
 ```
-## Daily Brief — [Weekday, Month DD, YYYY]
+<@U08G4GWKN22> Daily Brief — [Weekday, Month DD, YYYY]
 
-### ACTION ITEMS
-[grouped by urgency as above]
+✅ ACTION ITEMS
 
-**Strategic Queue:** [One item from projects.md with its next action]
+*Time-sensitive today*
+• ...
 
-### PROPOSED EMAILS
-Draft 1 — [Subject / recipient context]
-> To / CC / Subject
-> Body
+*Active deals / portfolio*
+• ...
 
-Draft 2 — ...
-Draft 3 — ...
+*Relationship / scheduling*
+• ...
+
+*Admin / deadlines*
+• ...
+
+*Strategic Queue:* [One item from projects.md with its next action]
 
 ---
-Summary: [1-2 sentences, what's most pressing today]
+[1-2 sentence summary: what's most pressing today]
 ```
