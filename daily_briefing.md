@@ -71,6 +71,12 @@ On Mondays only: prepend a "Carried Over from Last Week" section listing any act
 
 ---
 
+## 8. Slack Delivery
+
+After compiling the brief, post the full output to the Slack channel **#kc_daily_brief** (channel ID: `C0BASDNBTK5`) using `slack_send_message`.
+
+---
+
 ## Output Format
 
 ```
