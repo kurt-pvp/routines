@@ -67,22 +67,7 @@ On Mondays only: prepend a "Carried Over from Last Week" section listing any act
 
 ## 7. Proposed Email Drafts
 
-- **Do not draft replies to unread emails.** Reading and responding to those is Kurt's call.
-- Instead, identify 2–3 situations where a **net-new email** would move something forward — e.g., intro emails Kurt needs to make, outreach to someone mentioned in a meeting, or a follow-up to a warm external contact.
-- **External recipients only.** Primary is Slack-first — never propose emailing a @primary.vc colleague. Internal to-dos and follow-ups stay in Slack.
-- Draft each email: concise, professional, matching Kurt's tone (direct, warm, no filler)
-- Always include Kurt's signature in the email body:
-
-```
---
-Kurt Chessman
-VP, Strategic Finance & Corporate Development
-Primary | Twitter | LinkedIn | Newsletter
-We always want to meet top founders
-303.842.2029
-```
-
-- **Do not send.** Use `Gmail.create_draft` so each draft lands in Gmail Drafts ready to review and send. For replies, set `replyToMessageId`. For net-new emails, omit it.
+**Do not draft or create any email drafts.** This section is retired. Email drafting is Kurt's call.
 
 ---
 
@@ -95,14 +80,6 @@ We always want to meet top founders
 [grouped by urgency as above]
 
 **Strategic Queue:** [One item from projects.md with its next action]
-
-### PROPOSED EMAILS
-Draft 1 — [Subject / recipient context]
-> To / CC / Subject
-> Body
-
-Draft 2 — ...
-Draft 3 — ...
 
 ---
 Summary: [1-2 sentences, what's most pressing today]
