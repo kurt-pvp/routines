@@ -4,6 +4,14 @@ Run each morning. Pull from Granola, Gmail, and Slack. Present action items only
 
 ---
 
+## 0. Briefing Log — Continuity
+
+- Read `briefing_log.md` before pulling fresh data. It holds a rolling 4-8 week history of action items from past briefings, each entry checklist-style (`- [ ]` open, `- [x]` resolved).
+- For any open items from prior entries, spot-check against what you find in this run's Gmail/Slack/Granola pull. If there's clear evidence one was handled (reply sent, meeting held, access granted), check it off in place in the log.
+- Don't surface every open item every day. Only the Monday step (Section 5) pulls from this log into the output; other days just reconcile silently.
+
+---
+
 ## 1. Granola — Recent Meetings
 
 - Query `list_meetings` with `time_range: custom`, `custom_start` = yesterday, `custom_end` = today
@@ -63,7 +71,7 @@ If no action items exist across all sources, note that briefly.
 
 ## 5. Monday Morning Addition
 
-On Mondays only: prepend a "Carried Over from Last Week" section listing any action items from the previous week's briefings that remain unresolved. Source from memory or prior Granola/Gmail context.
+On Mondays only: prepend a "Carried Over from Last Week" section listing any items still open (`- [ ]`) in `briefing_log.md` from entries dated in the previous calendar week.
 
 ---
 
@@ -72,6 +80,16 @@ On Mondays only: prepend a "Carried Over from Last Week" section listing any act
 - No em-dashes. Use a comma, colon, or period instead.
 - No meetings list in the output. See note in section 1.
 - Keep bullets tight. One line per item where possible.
+
+---
+
+## 7. Updating the Log
+
+At the end of every run:
+
+- Append a new dated entry to `briefing_log.md` (top-level heading `## YYYY-MM-DD (Weekday)`) listing today's action items as an unchecked checklist, grouped loosely in the same order as the brief.
+- Leave the checkbox state of prior entries as reconciled in Section 0. Don't delete unresolved items, they stay open until checked off or pruned by age.
+- Prune entries older than 8 weeks from the top of the file.
 
 ## Output Format
 
