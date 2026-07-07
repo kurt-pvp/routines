@@ -18,6 +18,17 @@ Each daily briefing reads this file and surfaces one item from Active as a nudge
 **Next action:** Draft 5-7 research questions; identify 3-5 founders to talk to first
 **Added:** 2026-05-27 (Cassie weekly sync)
 
+### Finance Interviews
+**Goal:** Build relationships with finance leaders across the portfolio and broader network.
+**Next action:** Schedule first conversation (suggest starting with Hitesh, already in active Slack thread)
+**People:**
+- [ ] Hitesh Mulani
+- [ ] Luke Song
+- [ ] Erik Marcille
+- [ ] Tim Okita
+- [ ] Shanthi S
+**Added:** 2026-05-28
+
 ---
 
 ## Backlog
